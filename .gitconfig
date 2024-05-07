@@ -1,0 +1,6 @@
+[core]
+	editor = \"C:\\Users\\devav\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	autocrlf = false
+	fsmonitor = true
+[safe]
+	directory = *
