@@ -44,7 +44,7 @@
 					"background_templates": [
 						"{{ if or (.Working.Changed) (.Staging.Changed) }}#C19C00{{ end }}"
 					],
-					"template": " {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+					"template": " on {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
 					"properties": {
 						"branch_icon": "\uf126 ",
 						"fetch_stash_count": true,
@@ -79,7 +79,7 @@
 					"invert_powerline": true,
 					"foreground": "#0C0C0C",
 					"background": "#C19C00",
-					"template": " {{ .FormattedMs }} \uf252 "
+					"template": " took {{ .FormattedMs }} \uf252 "
 				},
 				{
 					"type": "root",
@@ -100,21 +100,17 @@
 					"invert_powerline": true,
 					"foreground": "#0C0C0C",
 					"background": "#CCCCCC",
-					"template": " {{ .CurrentDate | date .Format }} \uf017 ",
+					"template": " at {{ .CurrentDate | date .Format }} \uf017 ",
 					"properties": {
-						"time_format": "15:04:05"
+						"time_format": "3:04:05 PM"
 					}
 				},
 				{
 					"type": "text",
-					"style": "powerline"
+					"style": "powerline",
+					"template": "\t"
 				}
 			]
 		}
-	],
-	"transient_prompt": {
-		"foreground": "#5FD700",
-		"background": "transparent",
-		"template": "❯"
-	}
+	]
 }
