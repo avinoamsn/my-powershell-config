@@ -10,8 +10,7 @@
 			"segments": [
 				{
 					"type": "text",
-					"style": "plain",
-					"template": "\n"
+					"style": "plain"
 				},
 				{
 					"type": "os",
