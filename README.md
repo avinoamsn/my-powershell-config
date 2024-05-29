@@ -6,11 +6,13 @@ This repo contains a handful of files I use to customize my Powershell 7 experie
 
 - [Powershell 7](https://www.microsoft.com/store/productId/9MZ1SNWT0N5D?ocid=pdpshare)
 - [oh-my-posh](https://apps.microsoft.com/store/detail/XP8K0HKJFRXGCK?ocid=pdpshare)
+  - [pwsh10k](https://github.com/Kudostoy0u/pwsh10k) - p10k-like theme for oh-my-posh
 - Package Managers:
   - winget (pre-installed with Windows 10+)
   - [Chocolatey](https://chocolatey.org/)
-  - ~~[Scoop](https://scoop.sh/)~~ (not currently installed)
+  - ~~[Scoop](https://scoop.sh/)~~ (currently unused)
 - [Github CLI (gh)](https://github.com/cli/cli#windows)
+- [fnm](https://github.com/Schniz/fnm) - Node.js version manager (Powershell-compatible alternative to nvm)
 - These additional modules:
 
    ```powershell
@@ -23,7 +25,7 @@ This repo contains a handful of files I use to customize my Powershell 7 experie
     0.11.0               Terminal-Icons                      PSGallery            PowerShell module to add file icons to terminal based on file extension
    ```
 
-   ```txt
+   ```powershell
     # Output of `choco list`
 
     chocolatey 2.2.2
